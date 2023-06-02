@@ -1,3 +1,7 @@
-// ViAi is a dumb ai bot
-// do not use this
-// oh wait you already are using it oh no
+// ViAi is a ai that does not understand you because this project is so weird and funny
+
+var ViAi
+new XMLHttpRequest()
+ViAi.prompt = (message,...old_messages) => {
+    
+}
