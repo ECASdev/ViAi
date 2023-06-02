@@ -6,5 +6,5 @@ ViAi.coordinator = JSON.parse(`{
     "hi": "Hi! You can ask me anything you like! Make sure you say \"mommy\""
 }`)
 ViAi.prompt = (message = "Hi",...old_messages) => {
-//    for (ViAi.coordinator)
+    for (let i = 0; Array(ViAi.coordinator))
 }
