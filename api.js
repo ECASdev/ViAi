@@ -142,7 +142,7 @@ function typeWriter() {
   if (i < response.length) {
     responseElement.innerHTML += response.charAt(i);
     i++;
-    setTimeout(typeWriter, 100);
+    setTimeout(typeWriter, 50);
  }
 }
   typeWriter()
