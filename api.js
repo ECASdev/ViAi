@@ -143,7 +143,7 @@ function typeWriter() {
     responseElement.innerHTML += response.charAt(i);
     i++;
     setTimeout(typeWriter, 200);
-  }
-  typeWriter()
+ }
 }
+  typeWriter()
 }
