@@ -1,4 +1,4 @@
 # ViAi
-Ai
+An simple ai in JavaScript written by Google Bard
 
-Licenced under MIT Licence
+Check it out!: https://ecasdev.github.io/ViAi/
