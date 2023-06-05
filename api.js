@@ -144,5 +144,6 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, 200);
   }
+  typeWriter()
 }
 }
