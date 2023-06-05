@@ -136,13 +136,13 @@ response = "I can do many things. I can provide information, answer questions, a
 
   var responseElement = document.createElement("p");
   document.getElementById("response").appendChild(responseElement);
-  responseElement.innerHTML = `[ViAi]`
+  responseElement.innerHTML = `[ViAi]&nbsp;`
   var i = 0
 function typeWriter() {
   if (i < response.length) {
     responseElement.innerHTML += response.charAt(i);
     i++;
-    setTimeout(typeWriter, 200);
+    setTimeout(typeWriter, 100);
  }
 }
   typeWriter()
