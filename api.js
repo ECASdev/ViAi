@@ -67,9 +67,9 @@ function handleSubmit() {
 
   
   if (text.includes("what's your name")) {
-        text = "My name is ViAi. What's your name?";
+        response = "My name is ViAi. What's your name?";
     } else if (text.includes("who are you")) {
-        text = "I'm ViAi, a language model from ECAS. I'm still under development, but I'm learning to do many kinds of things, like generate text, twrite different kinds of creative content, and answer your questions in an informative way. They're working on me pretty well!";
+        response = "I'm ViAi, a language model from ECAS. I'm still under development, but I'm learning to do many kinds of things, like generate text, twrite different kinds of creative content, and answer your questions in an informative way. They're working on me pretty well!";
     } else if (text.includes("hello")) {
       response = "Hello! How can I help you today?";
     } else if (text.includes("what's your name")) {
