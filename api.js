@@ -74,6 +74,8 @@ function handleSubmit() {
       response = "Hello! How can I help you today?";
     } else if (text.includes("what's your name")) {
       response = "My name is ViAi. What's your name?";
+    } else if (text.includes("my name is")) {
+      response = "Nice to meet you, " + text.split("my name is ")[1] + ". I'm ViAi.";
     } else if (text.includes("what can you do")) {
       response = "I can help you with a variety of tasks, such as generating text, translating languages, and writing different kinds of creative content.";
     } else if (text.includes("what is the meaning of life")) {
