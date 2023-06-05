@@ -138,6 +138,7 @@ response = "I can do many things. I can provide information, answer questions, a
   document.getElementById("response").appendChild(responseElement);
   responseElement.innerHTML = `[ViAi]`
 function typeWriter() {
+  var i = 0
   if (i < response.length) {
     responseElement += response.charAt(i);
     i++;
