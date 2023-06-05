@@ -1,4 +1,3 @@
-var viaiwhatareyoudoing () => {  
 var misspellings = {
     " teh ": "the",
     " ur ": "you're",
@@ -108,6 +107,5 @@ function handleSubmit() {
   responseElement.innerHTML = `[ViAi]
     
     ` + response;
-}
 }
 viaiwhatareyoudoing()
