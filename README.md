@@ -1,4 +1,4 @@
 # ViAi
-Trash ai that can do nothing
+Ai
 
 Licenced under MIT Licence
