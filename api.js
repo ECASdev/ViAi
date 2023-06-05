@@ -140,7 +140,7 @@ response = "I can do many things. I can provide information, answer questions, a
 function typeWriter() {
   var i = 0
   if (i < response.length) {
-    responseElement += response.charAt(i);
+    responseElement.innerHTML += response.charAt(i);
     i++;
     setTimeout(typeWriter, 200);
   }
