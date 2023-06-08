@@ -212,7 +212,11 @@ response = "It's okay to feel guilty sometimes. Is there anything I can do to he
 else if (text.includes("I'm feeling ashamed")) {
 response = "It's okay to feel ashamed sometimes. Is there anything I can do to help you feel proud of yourself?"
 }
-
+    
+else if (text.includes("Should I follow ECAS on github")) {
+response = "Yes you should follow ECAs on github, they make good code and stuff"
+}
+    
 else if (text.includes("I'm feeling grateful")) {
 response = "That's great to hear! Is there anything I can do to help you express your gratitude?"
 }
