@@ -64,6 +64,7 @@ function handleSubmit() {
   for (var misspelling in misspellings) {
     text = text.replace(misspelling, misspellings[misspelling]);
   }
+  text = text.toLowerCase();
 
   
   if (text.includes("what's your name")) {
@@ -76,8 +77,6 @@ function handleSubmit() {
       response = "My name is ViAi. What's your name?";
     } else if (text.includes("my name is")) {
       response = "Nice to meet you, " + origText.split("my name is ")[1] + ". I'm ViAi.";
-    } else if (text.includes("what can you do")) {
-      response = "I can help you with a variety of tasks, such as generating text, translating languages, and writing different kinds of creative content.";
     } else if (text.includes("what is the meaning of life")) {
       response = "The meaning of life is a question that has been pondered by philosophers for centuries. There is no one answer that will satisfy everyone, but some possible answers include to find happiness, to make a difference in the world, or to simply live each day to the fullest.";
     } else if (text.includes("what is the best way to learn a new language")) {
@@ -130,98 +129,98 @@ response = "I am supposed to be a language model. This means that I am able to p
 response = "I am capable of many things. I can provide information, answer questions, and generate creative content. I can also translate languages, write different kinds of creative content, and answer your questions in an informative way. However, I am not able to translate languages. For that, you would need to use a language translation service such as Google Translate or Babelfish."
 } else if (text.includes("what can you do")) {
 response = "I can do many things. I can provide information, answer questions, and generate creative content. I can also translate languages, write different kinds of creative content, and answer your questions in an informative way. However, I am not able to translate languages. For that, you would need to use a language translation service such as Google Translate or Babelfish."
-} else if (text.includes("I'm feeling down")) {
+} else if (text.includes("i'm feeling down")) {
 response = "I'm sorry to hear that you're feeling down. Is there anything I can do to help?"
-} else if (text.includes("I'm feeling angry")) {
+} else if (text.includes("i'm feeling angry")) {
 response = "It's okay to feel angry sometimes. Is there anything I can do to help you calm down?"
-} else if (text.includes("I'm feeling scared")) {
+} else if (text.includes("i'm feeling scared")) {
 response = "It's okay to feel scared sometimes. Is there anything I can do to help you feel safe?"
-} else if (text.includes("I'm feeling lonely")) {
+} else if (text.includes("i'm feeling lonely")) {
 response = "It's okay to feel lonely sometimes. Is there anything I can do to help you connect with someone?"
-} else if (text.includes("I'm feeling happy")) {
+} else if (text.includes("i'm feeling happy")) {
 response = "That's great! I'm happy to hear that you're feeling happy. Is there anything I can do to help you stay happy?"
-} else if (text.includes("I'm feeling sad")) {
+} else if (text.includes("i'm feeling sad")) {
 response = "I'm sorry to hear that you're feeling sad. Is there anything I can do to help?"
-} else if (text.includes("I'm feeling stressed")) {
+} else if (text.includes("i'm feeling stressed")) {
 response = "It's okay to feel stressed sometimes. Is there anything I can do to help you relax?"
-} else if (text.includes("I'm feeling overwhelmed")) {
+} else if (text.includes("i'm feeling overwhelmed")) {
 response = "It's okay to feel overwhelmed sometimes. Is there anything I can do to help you break things down into smaller steps?"
-} else if (text.includes("I'm feeling grateful")) {
+} else if (text.includes("i'm feeling grateful")) {
 response = "That's great! I'm happy to hear that you're feeling grateful. Is there anything I can do to help you appreciate the good things in your life?"
-} else if (text.includes("I'm feeling proud")) {
+} else if (text.includes("i'm feeling proud")) {
 response = "That's great! I'm happy to hear that you're feeling proud. Is there anything I can do to help you celebrate your accomplishments?"
-} else if (text.includes("I'm feeling loved")) {
+} else if (text.includes("i'm feeling loved")) {
 response = "That's great! I'm happy to hear that you're feeling loved. Is there anything I can do to help you show your love to others?"
-} else if (text.includes("I'm feeling supported")) {
+} else if (text.includes("i'm feeling supported")) {
 response = "That's great! I'm happy to hear that you're feeling supported. Is there anything I can do to help you show your support to others?"
-} else if (text.includes("I'm feeling connected")) {
+} else if (text.includes("i'm feeling connected")) {
 response = "That's great! I'm happy to hear that you're feeling connected. Is there anything I can do to help you stay connected with others?"
-} else if (text.includes("I'm feeling hopeful")) {
+} else if (text.includes("i'm feeling hopeful")) {
 response = "That's great! I'm happy to hear that you're feeling hopeful. Is there anything I can do to help you stay hopeful for the future?"
-} else if (text.includes("I'm feeling optimistic")) {
+} else if (text.includes("i'm feeling optimistic")) {
 response = "That's great! I'm happy to hear that you're feeling optimistic. Is there anything I can do to help you stay optimistic about your goals?"
-} else if (text.includes("I'm feeling confident")) {
+} else if (text.includes("i'm feeling confident")) {
 response = "That's great! I'm happy to hear that you're feeling confident. Is there anything I can do to help you stay confident in your abilities?"
-} else if (text.includes("I'm feeling capable")) {
+} else if (text.includes("i'm feeling capable")) {
 response = "That's great! I'm happy to hear that you're feeling capable. Is there anything I can do to help you stay motivated to achieve your goals?"
-} else if (text.includes("I'm feeling accomplished")) {
+} else if (text.includes("i'm feeling accomplished")) {
 response = "That's great! I'm happy to hear that you're feeling accomplished. Is there anything I can do to help you celebrate your successes?"
-} else if (text.includes("I'm feeling anxious")) {
+} else if (text.includes("i'm feeling anxious")) {
 response = "It's okay to feel anxious sometimes. Is there anything I can do to help you relax?"
-} else if (text.includes("I'm feeling confused")) {
+} else if (text.includes("i'm feeling confused")) {
 response = "It's okay to feel confused sometimes. Is there anything I can do to help you clear things up?"
-} else if (text.includes("I'm feeling frustrated")) {
+} else if (text.includes("i'm feeling frustrated")) {
 response = "It's okay to feel frustrated sometimes. Is there anything I can do to help you vent?"
-} else if (text.includes("I'm feeling tired")) {
+} else if (text.includes("i'm feeling tired")) {
 response = "It's okay to feel tired sometimes. Is there anything I can do to help you get some rest?"
-} else if (text.includes("I'm feeling bored")) {
+} else if (text.includes("i'm feeling bored")) {
 response = "It's okay to feel bored sometimes. Is there anything I can do to help you find something to do?"
-} else if (text.includes("I'm feeling creative")) {
+} else if (text.includes("i'm feeling creative")) {
 response = "That's great! I'm happy to hear that you're feeling creative. Is there anything I can do to help you express your creativity?"
-} else if (text.includes("I'm feeling inspired")) {
+} else if (text.includes("i'm feeling inspired")) {
 response = "That's great! I'm happy to hear that you're feeling inspired. Is there anything I can do to help you achieve your goals?"
-} else if (text.includes("I'm feeling motivated")) {
+} else if (text.includes("i'm feeling motivated")) {
 response = "That's great! I'm happy to hear that you're feeling motivated. Is there anything I can do to help you stay on track?"
-} else if (text.includes("I'm feeling determined")) {
+} else if (text.includes("i'm feeling determined")) {
 response = "That's great! I'm happy to hear that you're feeling determined. Is there anything I can do to help you reach your goals?"
 } 
-else if (text.includes("I'm feeling happy")) {
+else if (text.includes("i'm feeling happy")) {
 response = "That's great to hear! Is there anything I can do to help you stay happy?"
 }
 
-else if (text.includes("I'm feeling sad")) {
+else if (text.includes("i'm feeling sad")) {
 response = "It's okay to feel sad sometimes. Is there anything I can do to help you cheer up?"
 }
 
-else if (text.includes("I'm feeling angry")) {
+else if (text.includes("i'm feeling angry")) {
 response = "It's okay to feel angry sometimes. Is there anything I can do to help you calm down?"
 }
 
-else if (text.includes("I'm feeling lonely")) {
+else if (text.includes("i'm feeling lonely")) {
 response = "It's okay to feel lonely sometimes. Is there anything I can do to help you connect with others?"
 }
 
-else if (text.includes("I'm feeling scared")) {
+else if (text.includes("i'm feeling scared")) {
 response = "It's okay to feel scared sometimes. Is there anything I can do to help you feel safe?"
 }
 
-else if (text.includes("I'm feeling guilty")) {
+else if (text.includes("i'm feeling guilty")) {
 response = "It's okay to feel guilty sometimes. Is there anything I can do to help you forgive yourself?"
 }
 
-else if (text.includes("I'm feeling ashamed")) {
+else if (text.includes("i'm feeling ashamed")) {
 response = "It's okay to feel ashamed sometimes. Is there anything I can do to help you feel proud of yourself?"
 }
     
-else if (text.includes("Should I follow ECAS on github")) {
+else if (text.includes("should i follow ecas on github")) {
 response = "Yes you should follow ECAs on github, they make good code and stuff"
 }
     
-else if (text.includes("I'm feeling grateful")) {
+else if (text.includes("i'm feeling grateful")) {
 response = "That's great to hear! Is there anything I can do to help you express your gratitude?"
 }
 
-else if (text.includes("I'm feeling hopeful")) {
+else if (text.includes("i'm feeling hopeful")) {
 response = "That's great to hear! Is there anything I can do to help you stay hopeful?"
     
     
@@ -380,7 +379,7 @@ function typeWriter() {
   if (i < response.length) {
     responseElement.innerHTML += response.charAt(i);
     i++;
-    setTimeout(typeWriter, 50);
+    setTimeout(typeWriter, 25);
  }
 }
   typeWriter()
