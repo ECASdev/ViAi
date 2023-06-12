@@ -9,7 +9,7 @@ h1 {
   text-align: center;
   font-size: 2em;
   margin-top: 0;
-  background-color: rgb(46, 36, 68);
+  color: white;
 }
 
 input {
@@ -18,14 +18,15 @@ input {
   background-color: rgb(73, 60, 104);
   border-radius: 5px;
   margin-bottom: 10px;
+  border: 1px solid #7A42E4;
 }
 
 div#response {
-  max-height: 200px;
   overflow-y: scroll;
   background-color: rgb(62, 44, 104);
   border-radius: 5px;
   margin-bottom: 10px;
+  border: 1px solid #7A42E4;
 }
 
 div#response p {
@@ -33,5 +34,5 @@ div#response p {
   margin-bottom: 5px;
   background-color: rgb(62, 44, 104);
   border-radius: 5px;
-  background-color: #493761;
+  border: 1px solid #7A42E4;
 }
