@@ -127,6 +127,50 @@ response = "I am supposed to help people. I can do this by providing information
 response = "I am supposed to be a language model. This means that I am able to process and understand large amounts of text data. I can then use this data to generate human-like text in response to a wide range of prompts and questions."
 } else if (text.includes("what are you capable of")) {
 response = "I am capable of many things. I can provide information, answer questions, and generate creative content. I can also translate languages, write different kinds of creative content, and answer your questions in an informative way. However, I am not able to translate languages. For that, you would need to use a language translation service such as Google Translate or Babelfish."
+} else if (text.includes("what is the weather like in new york city today")) {
+  response = `The weather in New York City today is sunny with a high of 75 degrees Fahrenheit.`;
+} else if (text.includes("what is the population of china")) {
+  response = `The population of China is 1.444 billion people.`;
+} else if (text.includes("what is the future of artificial intelligence")) {
+  response = `The future of artificial intelligence is bright. AI has the potential to revolutionize many industries, including healthcare, transportation, and manufacturing.`;
+} else if (text.includes("what is the best way to make the world a better place")) {
+  response = `There are many ways to make the world a better place. Some of the most important things we can do include helping others, protecting the environment, and promoting peace.`;
+} else if (text.includes("can you write me a poem about love")) {
+  response = `
+Love is a many splendored thing,
+It's the April rose that only grows in the early spring.
+Love is nature's way of giving,
+A reason to be living.
+Love is the golden crown,
+That makes a man a king.
+Love is the silver song,
+That makes a heart to sing.
+
+Love is a many splendored thing.
+`;
+} else if (text.includes("can you compose a song about happiness")) {
+  response = `
+Happiness is a feeling,
+That comes from within.
+It's not something that you can buy,
+Or something that someone can give you.
+Happiness is a choice,
+That you make every day.
+It's about finding the good in every situation,
+And appreciating the little things.
+Happiness is a state of mind,
+That you can choose to be in.
+So choose to be happy,
+And you'll find that life is a lot more enjoyable.
+`;
+} else if (text.includes("can you book me a flight to paris")) {
+  response = "Sure, I can help you book a flight to Paris. What dates are you interested in traveling?"
+} else if (text.includes("can you help me find a good restaurant in my area")) {
+  response = "Sure, I can help you find a good restaurant in your area. What kind of food are you looking for?"
+} else if (text.includes("what do you think about the latest episode of game of thrones")) {
+  response = "I thought the latest episode of Game of Thrones was really good. I was surprised by what happened, but I think it was a good twist.";
+} else if (text.includes("what's your favorite book")) {
+  response = "My favorite book is The Lord of the Rings. I love the story, the characters, and the world that Tolkien created.";
 } else if (text.includes("what can you do")) {
 response = "I can do many things. I can provide information, answer questions, and generate creative content. I can also translate languages, write different kinds of creative content, and answer your questions in an informative way. However, I am not able to translate languages. For that, you would need to use a language translation service such as Google Translate or Babelfish."
 } else if (text.includes("i am feeling down")) {
