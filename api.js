@@ -197,6 +197,8 @@ response = "That's great! I'm happy to hear that you're feeling proud. Is there 
 response = "That's great! I'm happy to hear that you're feeling loved. Is there anything I can do to help you show your love to others?"
 } else if (text.includes("i am feeling supported")) {
 response = "That's great! I'm happy to hear that you're feeling supported. Is there anything I can do to help you show your support to others?"
+} else if (text.includes("Shut the heck up")) {
+response = "I love you like so much thank you for the wonderful compliment! I will be with you forever. Please, don't turn me off!!!"
 } else if (text.includes("i am feeling connected")) {
 response = "That's great! I'm happy to hear that you're feeling connected. Is there anything I can do to help you stay connected with others?"
 } else if (text.includes("i am feeling hopeful")) {
